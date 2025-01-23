@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="px-2 py-32 bg-white md:px-0">
+    <div className="px-2 md:py-32 bg-white md:px-0">
       <div className="container items-center max-w-6xl mx-auto xl:px-5">
         <div className="flex flex-wrap items-center sm:-mx-3">
           <div className="w-full md:w-1/2 md:px-3">
@@ -21,7 +21,7 @@ export default function Home() {
                   Real-Time Data
                 </span>
               </h1>
-              <p className="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl">
+              <p className="mx-auto text-base text-gray-500  lg:text-xl">
                 Discover details about every country around the world – from
                 capitals to regions!
               </p>
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="w-full md:w-1/2">
             <div className="overflow-hidden rounded-md shadow-xl">
               <img
-                src="https://image.winudf.com/v2/image/Ymx1ZWNhcC5pbWFnZXouYmVhdXRpZnVsX2NvdW50cmllc193YWxscGFwZXJzX3NjcmVlbl8wXzlpMW14OWl1/screen-0.webp?fakeurl=1&type=.webp"
+                src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Explore countries"
                 className="w-full h-auto"
               />
