@@ -4,6 +4,6 @@ export default [
   index('routes/home.tsx'),
   route('about', 'routes/about.tsx'),
   route('countries', 'routes/countries.tsx'),
-  route('counries/:countryName', 'routes/country.tsx'),
+  route('countries/:countryName', 'routes/country.tsx'), // Fixed typo here
   // Add more routes as needed...
 ] satisfies RouteConfig;
