@@ -2,6 +2,13 @@ import { Link } from 'react-router';
 import type { Route } from './+types/countries';
 import { useState } from 'react';
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'EXPLORER | All Countries' },
+    { name: 'Checkout Country Data', content: 'Welcome to EXPLORER!' },
+  ];
+}
+
 export async function clientLoader() {
   try {
     const res = await fetch('https://restcountries.com/v3.1/all');

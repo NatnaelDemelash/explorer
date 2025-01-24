@@ -1,3 +1,12 @@
+import type { Route } from './+types/about';
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'EXPLORER | About this app' },
+    { name: 'Checkout Country Data', content: 'Welcome to EXPLORER!' },
+  ];
+}
+
 export default function About() {
   return (
     <div className="container mx-auto p-6">

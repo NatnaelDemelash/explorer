@@ -1,5 +1,6 @@
-import React from 'react';
 import type { Route } from './+types/country';
+
+import googleMapIcon from '../../public/google-map.png';
 
 // Define the type for loaderData (the country data object)
 interface CountryData {
@@ -129,11 +130,8 @@ export default function Country({ loaderData }: { loaderData: CountryData }) {
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-blue-600 hover:underline"
           >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Google_Maps_Icon.svg"
-              alt="Google Maps"
-              className="w-6 h-6"
-            />
+            <img src={googleMapIcon} alt="Google Maps" className="w-6 h-6" />
+
             <span>View on Google Maps</span>
           </a>
           <p className="text-gray-500 mt-2 text-sm">
