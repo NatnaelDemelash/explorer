@@ -1,9 +1,6 @@
-name = "my-ssr-app"
-main = "dist/index.js"
-compatibility_date = "2025-01-25"
+# Before (problematic)
+main = "build/server/index.js"
+site.entry-point = "build/server/index.js"
 
-[build]
-command = "npm run build && npm run build-worker"
-[site]
-bucket = "./build/client"
-entry-point = "./build/server"
+# After (fixed)
+main = "build/server/index.js"
