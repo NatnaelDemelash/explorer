@@ -1,0 +1,9 @@
+name = "my-ssr-app"
+main = "dist/index.js"
+compatibility_date = "2025-01-25"
+
+[build]
+command = "npm run build && npm run build-worker"
+[site]
+bucket = "./build/client"
+entry-point = "./build/server"
